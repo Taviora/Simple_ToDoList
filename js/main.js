@@ -16,9 +16,12 @@ new Vue({
                 });
             }
             this.task ="";
-            alert("Task added!!!");
-            console.log(this.tasks);
 
+        },
+
+        removeTask:function(task){
+            var index = this.tasks.indexOf(task);
+            this.tasks.splice(index,1);
         }
     }
 
